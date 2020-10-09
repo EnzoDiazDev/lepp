@@ -1,22 +1,23 @@
 {
   "name": "lottiets",
   "version": "1.0.0",
-  "description": "Una plantilla con mi estilo y algunas dependencias",
-  "main": "./dist/Main.js",
+  "description": "lottieexpres++ es un servidor express típico, preconfigurado y con atajos. Los atajos son una mala práctica",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts"
   },
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EnzoDiazDev/lottiets.git"
+    "url": "git+https://github.com/EnzoDiazDev/lepp.git"
   },
   "author": "Enzo Diaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EnzoDiazDev/lottiets/issues"
+    "url": "https://github.com/EnzoDiazDev/lepp/issues"
   },
-  "homepage": "https://github.com/EnzoDiazDev/lottiets#readme",
+  "homepage": "https://github.com/EnzoDiazDev/lepp#readme",
   "devDependencies": {
     "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
@@ -32,5 +33,10 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1"
   }
 }

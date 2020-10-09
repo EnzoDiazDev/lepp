@@ -8,7 +8,8 @@
       "noImplicitAny": false,
       "outDir": "./dist/",
       "baseUrl": "./src/",
-      "experimentalDecorators": true
+      "experimentalDecorators": true,
+      "declaration": true
     },
     "exclude": [
       "./node_modules/",
