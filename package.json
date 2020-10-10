@@ -2,9 +2,10 @@
   "name": "@enzodiazdev/lepp",
   "version": "1.0.5",
   "description": "lottieexpres++ es un servidor express típico, preconfigurado y con atajos. Los atajos son una mala práctica",
-  "main": "./src/index.ts",
+  "main": "index.ts",
   "scripts": {
     "build": "tsc",
+    "prepare": "npm run build",
     "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts"
   },
   "types": "dist/index.d.ts",

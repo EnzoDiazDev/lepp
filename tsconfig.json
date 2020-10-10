@@ -16,6 +16,6 @@
       "./dist/",
     ],
     "include": [
-      "./src/",
+      "./src/", "index.ts",
     ],
 }
