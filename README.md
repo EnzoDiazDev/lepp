@@ -60,12 +60,49 @@ lepp.run(); //<- Iniciás el servidor
 Ejecutá tu programa y entrá a http://localhost:3000. 
 
 ## Extensiones
-...En proceso. 
+Las extensiones son un conjunto de rutas.<br>
+LEPP provee un par de decoradores de clases y métodos para crearlas. <br>
+ * Controller
+ * Get, Put, Post, Update, Delete
+
+**Pasos para crear una extension**
+ * Importa los decoradores
+ * Crea una clase con el nombre que quieras ponerle a tu extensión
+ * Decora la clase con el decorador `Controller()`, si querés le pasas una ruta como parametro, para que todas las rutas que crees queden bajo esa.
+ * La clase no necesita una funcion constructora para funcionar, ni extender niguna otra clase, solo requiere del decorador.
+ * Crea un método y colocale el decorador del verbo que quieras: `@Get()`. Idealmente pasale como parametro una ruta para que tenga sentido crear rutas,¿no? 
+ * Usa el método `.add_extension(Extension)` de tu instancia de `Lepp`, y pasale LA CLASE (no le pases una instacia), es decir la extension. 
+ * Lee el código de abajo para que quede más claro
+
+```ts
+import Lepp, {decorators} from "@enzodiazdev/lepp";
+
+//destructuring
+const {Controller} = decorators;
+const {Get} = decorators.verbs;
+
+//GET http://localhost:PORT/foo/bar
+@Controller("/foo")
+class Foo {
+  @Get("/bar")
+  public bar(req:Request, res:Response){
+    res.send("bar!");
+  }
+}
+
+lepp.add_extension(Foo);
+```
+
+Muy fácil, ¿no?<br>
+Podés usar extensiones predefinidas o las extensiones de otros, y reutilizarlas en otros proyectos.
+
+**Extensiones predefinidas**
+ * Ninguna por el momento. 
 
 ## Middlewares
-Estas son las exensiones predefinidas, por popularidad. <br>
-Igual podés añadir todas las que quieras usando el método `.use()`<br>
-Para añadir más extensiones predefinidas, por favor crea un pull request o deja un [issue](https://github.com/EnzoDiazDev/lepp/issues) solicitandolo.
+Estos son los middlewares predefinidos, por popularidad. <br>
+Igual podés añadir todos los que quieras usando el método `.use()`<br>
+Para añadir más middlewares predefinidos, por favor crea un pull request o deja un [issue](https://github.com/EnzoDiazDev/lepp/issues) solicitandolo.
  * [Helmet](https://helmetjs.github.io/)
  * [cors](https://github.com/expressjs/cors)
  * [morgan](https://github.com/expressjs/morgan)
