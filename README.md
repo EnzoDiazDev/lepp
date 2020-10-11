@@ -20,8 +20,8 @@ Seguís teniendo acceso a la instacia `app` de express, por ende podés seguir h
 LEPP no añade ninguna funcionalidad sin que ejecutes un método para ello.
 
 #### ¿Qué otras ventajas ofrece?
-Typescript. Si eso no te convence, empeza por acá: https://www.typescriptlang.org/
-[Extensiones](#Extensiones). Las extensiones son un conjunto de rutas, controladores básicamete, que se escriben utilizando decoradores.
+* Typescript. Si eso no te convence, empeza por acá: https://www.typescriptlang.org/ <br>
+* [Extensiones](#Extensiones). Las extensiones son un conjunto de rutas, controladores básicamete, que se escriben utilizando decoradores.
 
 #### ¿No hay otra librería que haga esto? 
 Sí, e infinitamente mejores que ésta, pero tenés que aprenderte toda la librería de nuevo.<br>
