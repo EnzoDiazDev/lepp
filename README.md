@@ -35,7 +35,8 @@ Usalo cuando necesites mostrar tus algoritmos y funcionalidades, cuando necesite
 No lo uses para proyectos profesionales porque no tiene mucho sentido, aunque nada te limita.
 
 ## Empezar
-Inicia un proyecto de npm usando typescript, también tengo un atajo para eso: https://github.com/EnzoDiazDev/lottiets
+Inicia un proyecto de npm usando typescript. <br>
+*También tengo un atajo para eso eh:* https://github.com/EnzoDiazDev/lottiets
 
 Instala la librería<br>
 `npm i @enzodiazdev/lepp`
