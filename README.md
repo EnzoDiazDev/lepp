@@ -31,7 +31,7 @@ Acá solo aprendés a añadir extensiones (muy fácil).
 Solo para quienes conozcan express y typescript. O sea que sí. 
 
 #### ¿Cuándo debería y cuando no debería utilizar LEPP? 
-Usalo cuando necesites mostrar tus algoritmos y funcionalidades, cuando necesites crear prototipos. 
+Usalo cuando necesites mostrar tus algoritmos y funcionalidades, cuando necesites crear prototipos. <br>
 No lo uses para proyectos profesionales porque no tiene mucho sentido, aunque nada te limita.
 
 ## Empezar
