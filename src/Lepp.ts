@@ -1,4 +1,5 @@
 import App from "./server/App";
+import {Express} from "express";
 import { CorsOptions } from "cors";
 import {ExpressRoute, ErrorRoute} from "./utils/RoutesTypes";
 import RouteDefinition from "./utils/RouteDefinition";
@@ -21,7 +22,7 @@ import "reflect-metadata";
  * @see https://github.com/EnzoDiazDev/lepp
  */
 export default class Lepp {
-    public app:App
+    private app:App
 
     /**
      * Crea la instancia de app de express.
@@ -145,5 +146,12 @@ export default class Lepp {
      */
     public get server():Server {
         return this.app.get_server();
+    }
+
+    /**
+     * La instancia app de express. No recomendado.
+     */
+    get application():Express {
+        return this.app.app;
     }
 }
