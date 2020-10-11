@@ -1,6 +1,6 @@
 {
   "name": "@enzodiazdev/lepp",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "lottieexpres++ es un servidor express típico, preconfigurado y con atajos. Los atajos son una mala práctica",
   "main": "index.ts",
   "scripts": {
@@ -19,9 +19,9 @@
     "url": "https://github.com/EnzoDiazDev/lepp/issues"
   },
   "homepage": "https://github.com/EnzoDiazDev/lepp#readme",
-  "publishConfig": { 
+  "publishConfig": {
     "registry": "https://npm.pkg.github.com/EnzoDiazDev"
-  },  
+  },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.7",
