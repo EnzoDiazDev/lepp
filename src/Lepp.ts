@@ -13,13 +13,12 @@ import "reflect-metadata";
    const lepp = new Lepp(3000);
 
    lepp.use_helmet()
-       .use_bodyparser()
-       .use_cors()
        .use_morgan("tiny")
        .use_default_routes();
 
    lepp.run();
  * @see https://github.com/EnzoDiazDev/lepp
+ * @see api_reference: https://github.com/EnzoDiazDev/lepp/wiki
  */
 export default class Lepp {
     private app:App
@@ -83,9 +82,9 @@ export default class Lepp {
     /**
      * Utiliza tres rutas predefinidas: index, 404 y 500.
      * Pueden ser modificadas posteriormente
-     * @see `set` `index_route`
-     * @see `set` `not_found_route`
-     * @see `set` `interal_error_route`
+     * @see `lep.index_route`
+     * @see `lep.not_found_route`
+     * @see `lep.interal_error_route`
      */
     public use_default_routes():void {
         this.app.use_default_routes();
@@ -108,17 +107,17 @@ export default class Lepp {
     /**
      * Setea la respuesta para 500 server error.
      */
-    public set interal_error_route(route:ErrorRoute) {
+    public set interal_error_response(route:ErrorRoute) {
         this.app.interal_error_route = route;
     }
 
     /**
      * Añade una extensión, una clase (no una instancia) con el decorador `@Controller` para dotar de rutas al servidor.
      * @param Extension Cualquier clase con el decorador `@Controller`
-     * @see https://github.com/EnzoDiazDev/lepp
+     * @see https://github.com/EnzoDiazDev/lepp#Extensiones
      */
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-    public add_extension(Extension):void {
+    public add_extension(Extension):Lepp {
         try {
             const instance = new Extension();
             const prefix = Reflect.getMetadata("prefix", Extension);
@@ -129,6 +128,8 @@ export default class Lepp {
                     instance[route.methodName](req, res);
                 });
             });
+
+            return this;
         } catch {
             throw new Error("Esta extensión es inválida");
         }
@@ -136,6 +137,7 @@ export default class Lepp {
 
     /**
      * Enciende el servidor en el puerto indicado al crear la instancia.
+     * @see http://expressjs.com/es/api.html#app.listen_path_callback
      */
     public run():void {
         this.app.start();
@@ -143,6 +145,7 @@ export default class Lepp {
 
     /**
      * Obtiene el HTTPServer de express; el servidor en sí.
+     * @see https://nodejs.org/api/http.html#http_class_http_server
      */
     public get server():Server {
         return this.app.get_server();
@@ -150,6 +153,7 @@ export default class Lepp {
 
     /**
      * La instancia app de express. No recomendado.
+     * @see http://expressjs.com/es/api.html#express
      */
     get application():Express {
         return this.app.app;
