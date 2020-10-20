@@ -75,8 +75,9 @@ export default class Lepp {
      * @param options opciones de morgan
      * @see https://github.com/expressjs/morgan
      */
-    public use_morgan(format = "combined", options?:Options<IncomingMessage, ServerResponse>):void {
+    public use_morgan(format = "combined", options?:Options<IncomingMessage, ServerResponse>):Lepp {
         this.app.use_morgan(format, options);
+        return this;
     }
 
     /**
@@ -124,7 +125,7 @@ export default class Lepp {
             const routes:Array<RouteDefinition> = Reflect.getMetadata("routes", Extension);
 
             routes.forEach(route => {
-                this.app.app[route.requestMethod](`${prefix}${route.path}`, (req, res) => {
+                this.app.app[route.requestMethod](`${prefix}${route.path}`, ...route.middlewares, (req, res) => {
                     instance[route.methodName](req, res);
                 });
             });
