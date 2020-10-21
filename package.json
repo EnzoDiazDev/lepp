@@ -1,6 +1,6 @@
 {
   "name": "@enzodiazdev/lepp",
-  "version": "1.5.6",
+  "version": "1.6.0",
   "description": "lottieexpres++ es un servidor express típico, preconfigurado y con atajos. Los atajos son una mala práctica",
   "main": "index.ts",
   "scripts": {
