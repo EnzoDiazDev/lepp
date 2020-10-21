@@ -6,7 +6,7 @@ import "reflect-metadata";
 
 export default function Use(...middlewares:Array<MiddlewareRoute>):MethodDecorator {
     return (target, propertyKey) => {
-        //if(!propertyKey) throw new Error("Controller middlewares are not suported yet");
+        if(!propertyKey) throw new Error("Controller middlewares are not suported yet");
 
         if (!Reflect.hasMetadata("routes", target.constructor))
             Reflect.defineMetadata("routes", [], target.constructor);

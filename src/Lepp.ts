@@ -131,8 +131,9 @@ export default class Lepp {
             });
 
             return this;
-        } catch {
-            throw new Error("Esta extensión es inválida");
+        } catch (e) {
+            console.error(e);
+            throw new Error("This extension is not valid");
         }
     }
 

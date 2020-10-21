@@ -16,6 +16,7 @@ export default class DefaultRoutes {
 
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         this.internal_error = (err, req, res, next) => {
+            console.error(err);
             res.status(500).json({message: "Internal error"});
         };
     }
