@@ -127,7 +127,9 @@ export default class Lepp {
             routes.forEach(route => {
                 const middlewares = route.middlewares;
 
-                this.app.app[route.requestMethod](`${prefix}${route.path}`, ...middlewares, instance[route.methodName]);
+                this.app.app[route.requestMethod](`${prefix}${route.path}`, ...middlewares, (req, res, next) => {
+                    instance[route.methodName](req, res, next);
+                });
             });
 
             return this;
