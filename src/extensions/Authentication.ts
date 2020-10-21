@@ -1,6 +1,6 @@
 import {Request, Response} from "express";
-import Controller from "../utils/Controller";
-import {Get} from "../utils/Verbs";
+import Controller from "../utils/decorators/Controller";
+import {Get} from "../utils/decorators/Verbs";
 
 @Controller("/auth")
 export default class Authentication {

@@ -12,6 +12,7 @@ export default class App {
     private port = 3000;
     private server:Server|null = null;
     private default_routes = new DefaultRoutes();
+    private needs_default_routes = false;
 
     /**
      * Crea la instancia de app de express. Deshabilita la cabecera `"x-powered-by"`
@@ -76,9 +77,7 @@ export default class App {
      * @see `set/get` `interal_error_route`
      */
     public use_default_routes():void {
-        this.app.get("/", this.default_routes.index_route);
-        this.use(this.default_routes.index_route);
-        this.use(this.default_routes.not_found_route);
+        this.needs_default_routes = true;
     }
 
     /**
@@ -123,6 +122,12 @@ export default class App {
      * Enciende el servidor en el puerto indicado con un mensaje de aviso por consola.
      */
     public start():void {
+        if(this.needs_default_routes){
+            this.app.get("/", this.default_routes.index_route);
+            this.use(this.default_routes.interal_error_route);
+            this.use(this.default_routes.not_found_route);
+        }
+
         this.server = this.app.listen(this.port, () => console.log(`Server running: http://localhost:${this.port}`));
     }
 }

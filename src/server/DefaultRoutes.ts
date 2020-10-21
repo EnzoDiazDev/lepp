@@ -14,7 +14,8 @@ export default class DefaultRoutes {
             res.status(404).json({message: `The requested url '${req.url}' was not found`});
         };
 
-        this.internal_error = (err, req, res) => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        this.internal_error = (err, req, res, next) => {
             res.status(500).json({message: "Internal error"});
         };
     }

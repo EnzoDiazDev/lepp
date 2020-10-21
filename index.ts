@@ -1,7 +1,8 @@
 import Lepp from "./src/Lepp";
 import Authentication from "./src/extensions/Authentication";
-import Controller from "./src/utils/Controller";
-import verbs from "./src/utils/Verbs";
+import Controller from "./src/utils/decorators/Controller";
+import verbs from "./src/utils/decorators/Verbs";
+import Use from "./src/utils/decorators/Use";
 
 /**
  * Varias extensiones predefinidas.
@@ -17,6 +18,7 @@ export const extensions = {
  */
 export const decorators = {
     Controller,
+    Use,
     verbs
 };
 

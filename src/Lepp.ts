@@ -125,9 +125,9 @@ export default class Lepp {
             const routes:Array<RouteDefinition> = Reflect.getMetadata("routes", Extension);
 
             routes.forEach(route => {
-                this.app.app[route.requestMethod](`${prefix}${route.path}`, ...route.middlewares, (req, res) => {
-                    instance[route.methodName](req, res);
-                });
+                const middlewares = route.middlewares;
+
+                this.app.app[route.requestMethod](`${prefix}${route.path}`, ...middlewares, instance[route.methodName]);
             });
 
             return this;

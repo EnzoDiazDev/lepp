@@ -1,4 +1,4 @@
-import RouteDefinition, {verbs} from "./RouteDefinition";
+import RouteDefinition, {verbs} from "../RouteDefinition";
 import "reflect-metadata";
 
 function decorator(verb:verbs, path:string) {
@@ -8,12 +8,23 @@ function decorator(verb:verbs, path:string) {
 
         const routes = Reflect.getMetadata("routes", target.constructor) as Array<RouteDefinition>;
 
-        routes.push({
-            requestMethod: verb,
-            path,
-            methodName: propertyKey,
-            middlewares: []
-        });
+        const index = routes.findIndex(route => route.methodName === propertyKey);
+
+        if(index !== -1) {
+            routes[index] = {
+                requestMethod: verb,
+                path: path,
+                methodName: propertyKey,
+                middlewares: routes[index].middlewares
+            };
+        } else {
+            routes.push({
+                requestMethod: verb,
+                path: path,
+                methodName: propertyKey,
+                middlewares: []
+            });
+        }
 
         Reflect.defineMetadata("routes", routes, target.constructor);
     };
