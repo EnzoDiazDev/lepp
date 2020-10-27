@@ -33,7 +33,7 @@ LEPP no añade ninguna funcionalidad sin que ejecutes un método para ello.
 Sí, e infinitamente mejores que ésta, pero tenés que aprenderte toda la librería de nuevo.<br>
 Acá solo aprendés a añadir extensiones (muy fácil).
 
-#### ¿Está hecha para todes? 
+#### ¿Está hecha para todos? 
 Solo para quienes conozcan express y typescript. O sea que sí. 
 
 #### ¿Cuándo debería y cuando no debería utilizar LEPP? 
