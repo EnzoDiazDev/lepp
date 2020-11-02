@@ -84,8 +84,7 @@ LEPP provee un par de decoradores de clases y métodos para crearlas. <br>
 import Lepp, {decorators} from "@enzodiazdev/lepp";
 
 //destructuring
-const {Controller} = decorators;
-const {Get} = decorators.verbs;
+const {Controller, Get} = decorators;
 
 //GET http://localhost:PORT/foo/bar
 @Controller("/foo")
@@ -100,10 +99,12 @@ lepp.add_extension(Foo);
 ```
 
 Muy fácil, ¿no?<br>
-Podés usar extensiones predefinidas o las extensiones de otros, y reutilizarlas en otros proyectos.
+También podés usar las extensiones de otros, y reutilizarlas en otros proyectos.
 
-**Extensiones predefinidas**
+**Extensiones recomendadas**
  * Ninguna por el momento. 
+*Nota: Desde la 1.6.5, Lepp ya no provee exensiones, éstas se instalan como dependencias de npm*
+
 
 ## Middlewares
 Estos son los middlewares predefinidos, por popularidad. <br>

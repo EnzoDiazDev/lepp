@@ -32,9 +32,6 @@ Cuando abras tu editor favorito, vas a ver algo como
 ```
 project/
 ├── src/
-│   ├── extensions/
-|   |   └── ...
-|   |
 │   ├── server/ 
 |   |   ├── App.ts
 |   │   └── ...
@@ -57,8 +54,6 @@ project/
 `package.json`, `.gitignore`, `tsconfig.json`, `.eslintrc.json`, entre otros, son los archivos de configuración del entorno. Estos nos definen algunas reglas de estilo que hay que respetar. 
 
 `src/Lepp.ts` La clase principal, que abstrae cualquer implementación que hay en la librería, para que el programador final sepa claramente qué hace cada cosa. Debe estar incluso sobredocumentada, con ejemplos y todo. Por lo general los métodos [delegan](https://es.wikipedia.org/wiki/Delegation_(patr%C3%B3n_de_dise%C3%B1o)) las tareas a otras clases. 
-
-`src/extensions/*` Como su nombre lo indica se encuentran todas las extensiones. Un archivo, una extensión.
 
 `src/server/*` Acá se encuentra la configuración de express, con todos métodos que interactuan con la instancia de express. 
 

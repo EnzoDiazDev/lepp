@@ -1,7 +1,7 @@
 {
   "name": "@enzodiazdev/lepp",
-  "version": "1.6.1",
-  "description": "lottieexpres++ es un servidor express típico, preconfigurado y con atajos. Los atajos son una mala práctica",
+  "version": "1.6.5",
+  "description": "Lottieexpress++ es una extension de Express hecha con y para typescript",
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
