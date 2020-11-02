@@ -73,13 +73,13 @@ export function Post(path:string):MethodDecorator {
  * Decorador para los métodos de una extensión
  * @param path el endpoint
  * @example
-   0Update("/foo")
+   0Patch("/foo")
    foo(req:Request, res:Response){
        res.send("bar!")
    }
  */
-export function Update(path:string):MethodDecorator {
-    return decorator("update", path);
+export function Patch(path:string):MethodDecorator {
+    return decorator("patch", path);
 }
 
 /**
@@ -95,10 +95,15 @@ export function Delete(path:string):MethodDecorator {
     return decorator("delete", path);
 }
 
+export function Method(method:verbs, path:string):MethodDecorator {
+    return decorator(method, path);
+}
+
 export default {
     Get,
     Put,
     Post,
-    Update,
-    Delete
+    Patch,
+    Delete,
+    Method
 };
