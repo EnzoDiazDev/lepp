@@ -1,8 +1,8 @@
 {
   "name": "@enzodiazdev/lepp",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "description": "Lottieexpress++ es una extension de Express hecha con y para typescript",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
