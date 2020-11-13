@@ -17,8 +17,8 @@ import "reflect-metadata";
        .use_default_routes();
 
    lepp.run();
- * @see https://github.com/EnzoDiazDev/lepp
- * @see api_reference: https://github.com/EnzoDiazDev/lepp/wiki
+ * @see https://github.com/lottielabs/lepp
+ * @see api_reference: https://github.com/lottielabs/lepp/wiki
  */
 export default class Lepp {
     private app:App
@@ -115,7 +115,7 @@ export default class Lepp {
     /**
      * Añade una extensión, una clase (no una instancia) con el decorador `@Controller` para dotar de rutas al servidor.
      * @param Extension Cualquier clase con el decorador `@Controller`
-     * @see https://github.com/EnzoDiazDev/lepp#Extensiones
+     * @see https://github.com/lottielabs/lepp#Extensiones
      */
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     public add_extension(Extension):Lepp {

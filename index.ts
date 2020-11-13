@@ -5,7 +5,7 @@ import Use from "./src/utils/decorators/Use";
 
 /**
  * Decoradores para la creación de extensiones
- * @see https://github.com/EnzoDiazDev/lepp
+ * @see https://github.com/lottielabs/lepp
  */
 export const decorators = {
     Controller,
