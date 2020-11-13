@@ -1,5 +1,3 @@
-import "reflect-metadata";
-
 /**
  * Indica que la clase será una extensión
  * @param prefix dirección base de las rutas
