@@ -1,38 +1,34 @@
 {
-  "name": "@enzodiazdev/lepp",
+  "name": "@lottielabs/lepp",
   "version": "1.6.7",
   "description": "Lottieexpress++ es una extension de Express hecha con y para typescript",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts"
+    "dev": "ts-node ./src/Main.ts"
   },
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EnzoDiazDev/lepp.git"
+    "url": "git+https://github.com/lottielabs/lepp.git"
   },
   "author": "Enzo Diaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EnzoDiazDev/lepp/issues"
+    "url": "https://github.com/lottielabs/lepp/issues"
   },
-  "homepage": "https://github.com/EnzoDiazDev/lepp#readme",
+  "homepage": "https://github.com/lottielabs/lepp#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/EnzoDiazDev"
+    "registry": "https://npm.pkg.github.com/lottielabs"
   },
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
-    "@types/jsonwebtoken": "^8.5.0",
     "@types/morgan": "^1.9.1",
     "@types/node": "^14.11.1",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
-    "cross-env": "^7.0.2",
-    "dotenv": "^8.2.0",
     "eslint": "^7.9.0",
     "eslint-config-prettier": "^6.11.0",
     "husky": "^4.3.0",
@@ -42,12 +38,10 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^4.1.1",
-    "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "reflect-metadata": "^0.1.13"
   }
