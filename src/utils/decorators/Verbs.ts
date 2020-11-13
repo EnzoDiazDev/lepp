@@ -1,5 +1,4 @@
 import RouteDefinition, {verbs} from "../RouteDefinition";
-import "reflect-metadata";
 
 function decorator(verb:verbs, path:string) {
     return (target, propertyKey) => {

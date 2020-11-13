@@ -1,9 +1,6 @@
 import {MiddlewareRoute} from "../RoutesTypes";
 import RouteDefinition from "../RouteDefinition";
 
-import "reflect-metadata";
-
-
 export default function Use(...middlewares:Array<MiddlewareRoute>):MethodDecorator {
     return (target, propertyKey) => {
         if(!propertyKey) throw new Error("Controller middlewares are not suported yet");

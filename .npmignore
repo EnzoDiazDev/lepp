@@ -1,5 +1,5 @@
 src/
-dist/Main*
+dist/src/Main*
 index.ts
 node_modules/
 CONTRIBUTING.md

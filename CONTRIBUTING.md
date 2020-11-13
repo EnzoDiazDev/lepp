@@ -1,9 +1,9 @@
 # Contributing
 
 Antes de contribuir en este repositorio, por favor
- * lee el [README.md](https://github.com/EnzoDiazDev/lepp/blob/master/README.md),
- * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/EnzoDiazDev/lepp/blob/master/CODE_OF_CONDUCT.md),
- * visita nuestros [issues](https://github.com/EnzoDiazDev/lepp/issues),
+ * lee el [README.md](https://github.com/lottielabs/lepp/blob/master/README.md),
+ * lee nuestro [CODE_OF_CONDUCT.md](https://github.com/lottielabs/lepp/blob/master/CODE_OF_CONDUCT.md),
+ * visita nuestros [issues](https://github.com/lottielabs/lepp/issues),
  * considera formar parte de la discusión en *undefined*,
  * si es tu primera vez, lee un resumen de cómo contribuir: [Contribuir por primera vez en Github](https://gist.github.com/EnzoDiazDev/31e73d0573142d0573eb58d69a5158fd)
  * termina de leer este archivo. 
@@ -91,7 +91,7 @@ Ejecuta `npm run dev`, e ingresa a `http://localhost:3000/` para ver que todo fu
 
 Para picar código, no olvides tener la extension [eslint](https://eslint.org/) instalada en tu editor de código favorito. 
 
-Lee los [issues](https://github.com/EnzoDiazDev/lepp/issues), selecciona la tarea, y desarrolla la solución. 
+Lee los [issues](https://github.com/lottielabs/lepp/issues), selecciona la tarea, y desarrolla la solución. 
 
 ### Estilo
 Programar con estilo es clave. <br>
@@ -108,4 +108,4 @@ Algunas buenas prácticas:
 
 ### Más cosas
 El contributing también se escribe a medida que surgen nuevas dudas.<br>
-Por favor, deja un [issues](https://github.com/EnzoDiazDev/lepp/issues) con la etiqueta de `question` y pregunta lo que necesites saber. 
+Por favor, deja un [issues](https://github.com/lottielabs/lepp/issues) con la etiqueta de `question` y pregunta lo que necesites saber. 

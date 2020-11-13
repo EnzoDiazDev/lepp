@@ -39,7 +39,7 @@ Este código de conducta aplica tanto a espacios del proyecto como a espacios p�
 
 ## Aplicación
 
-Instancias de comportamiento abusivo, acosador o inaceptable de otro modo podrán ser reportadas a los administradores de la comunidad responsables del cumplimiento al email [enzodiazdev@gmail.com](mailto:enzodiazdev@gmail.com). Todas las quejas serán evaluadas e investigadas de una manera puntual y justa.
+Instancias de comportamiento abusivo, acosador o inaceptable de otro modo podrán ser reportadas a los administradores de la comunidad responsables del cumplimiento al email [lottielabs@gmail.com](mailto:lottielabs@gmail.com). Todas las quejas serán evaluadas e investigadas de una manera puntual y justa.
 
 Todos los administradores de la comunidad están obligados a respetar la privacidad y la seguridad de quienes reporten incidentes.
 
