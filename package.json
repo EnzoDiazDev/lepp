@@ -19,9 +19,7 @@
     "url": "https://github.com/lottielabs/lepp/issues"
   },
   "homepage": "https://github.com/lottielabs/lepp#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/lottielabs"
-  },
+
   "devDependencies": {
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
