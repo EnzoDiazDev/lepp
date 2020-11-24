@@ -1,7 +1,7 @@
 import App from "./server/App";
 import {Express} from "express";
 import { CorsOptions } from "cors";
-import {ExpressRoute, ErrorRoute} from "./utils/RoutesTypes";
+import {ExpressRoute, ErrorRoute, MiddlewareRoute} from "./utils/RoutesTypes";
 import RouteDefinition from "./utils/RouteDefinition";
 import { IncomingMessage, Server, ServerResponse } from "http";
 import {Options} from "morgan";
@@ -122,10 +122,11 @@ export default class Lepp {
         try {
             const instance = new Extension();
             const prefix = Reflect.getMetadata("prefix", Extension);
+            const controller_middlewares:Array<MiddlewareRoute> = Reflect.getMetadata("middlewares", Extension);
             const routes:Array<RouteDefinition> = Reflect.getMetadata("routes", Extension);
 
             routes.forEach(route => {
-                const middlewares = route.middlewares;
+                const middlewares = controller_middlewares.concat(route.middlewares);
 
                 this.app.app[route.requestMethod](`${prefix}${route.path}`, ...middlewares, (req, res, next) => {
                     instance[route.methodName](req, res, next);
