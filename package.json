@@ -1,6 +1,6 @@
 {
   "name": "@lottielabs/lepp",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "Lottieexpress++ es una extension de Express hecha con y para typescript",
   "main": "dist/index.js",
   "scripts": {
@@ -19,9 +19,6 @@
     "url": "https://github.com/lottielabs/lepp/issues"
   },
   "homepage": "https://github.com/lottielabs/lepp#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/lottielabs"
-  },
   "devDependencies": {
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
