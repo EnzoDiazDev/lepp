@@ -1,6 +1,6 @@
 {
-  "name": "@lottielabs/lepp",
-  "version": "1.7.0",
+  "name": "@enzodiazdev/lepp",
+  "version": "1.7.1",
   "description": "Lottieexpress++ es una extension de Express hecha con y para typescript",
   "main": "dist/index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lottielabs/lepp.git"
+    "url": "git+https://github.com/enzodiazdev/lepp.git"
   },
   "author": "Enzo Diaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lottielabs/lepp/issues"
+    "url": "https://github.com/enzodiazdev/lepp/issues"
   },
-  "homepage": "https://github.com/lottielabs/lepp#readme",
+  "homepage": "https://github.com/enzodiazdev/lepp#readme",
   "devDependencies": {
     "@types/cors": "^2.8.7",
     "@types/express": "^4.17.8",
