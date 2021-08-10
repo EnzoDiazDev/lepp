@@ -2,11 +2,11 @@
 Lottieexpress++ es una extension de Express hecha con y para typescript.<br>
 *Nota: No se recomienda para programadores novatos por ser una librería que abstrae demasiados conceptos.*
 
-`npm i @lottielabs/lepp`
+`npm i @enzodiazdev/lepp`
 
-API Reference: https://github.com/lottielabs/lepp/wiki
+API Reference: https://github.com/enzodiazdev/lepp/wiki
 
-Contribuir: [CONTRIBUTING.md](https://github.com/lottielabs/lepp/blob/master/CONTRIBUTING.md)
+Contribuir: [CONTRIBUTING.md](https://github.com/enzodiazdev/lepp/blob/master/CONTRIBUTING.md)
 
 **Indice**
 * [FAQ](#FAQ)
@@ -42,14 +42,14 @@ No lo uses para proyectos profesionales porque no tiene mucho sentido, aunque na
 
 ## Empezar
 Inicia un proyecto de npm usando typescript. <br>
-*También tengo un atajo para eso eh:* https://github.com/lottielabs/lottiets
+*También tengo un atajo para eso eh:* https://github.com/enzodiazdev/lottiets
 
 Instala la librería<br>
-`npm i @lottielabs/lepp`
+`npm i @enzodiazdev/lepp`
 
 Copia y pega.
 ```ts
-import Lepp from "@lottielabs/lepp";
+import Lepp from "@enzodiazdev/lepp";
 
 const lepp = new Lepp(3000); //<- Le pasas el puerto.
 
@@ -81,7 +81,7 @@ LEPP provee un par de decoradores de clases y métodos para crearlas. <br>
  * Lee el código de abajo para que quede más claro
 
 ```ts
-import Lepp, {decorators} from "@lottielabs/lepp";
+import Lepp, {decorators} from "@enzodiazdev/lepp";
 
 //destructuring
 const {Controller, Get} = decorators;
@@ -109,7 +109,7 @@ También podés usar las extensiones de otros, y reutilizarlas en otros proyecto
 ## Middlewares
 Estos son los middlewares predefinidos, por popularidad. <br>
 Igual podés añadir todos los que quieras usando el método `.use()`<br>
-Para añadir más middlewares predefinidos, por favor crea un pull request o deja un [issue](https://github.com/lottielabs/lepp/issues) solicitandolo.
+Para añadir más middlewares predefinidos, por favor crea un pull request o deja un [issue](https://github.com/enzodiazdev/lepp/issues) solicitandolo.
  * [Helmet](https://helmetjs.github.io/)
  * [cors](https://github.com/expressjs/cors)
  * [morgan](https://github.com/expressjs/morgan)
