@@ -19,6 +19,7 @@ import "reflect-metadata";
    lepp.run();
  * @see https://github.com/lottielabs/lepp
  * @see api_reference: https://github.com/lottielabs/lepp/wiki
+ * @author Enzo Diaz <enzodiazdev@gmail.com>
  */
 export default class Lepp {
     private app:App
