@@ -8,7 +8,7 @@ import {Options} from "morgan";
 import "reflect-metadata";
 
 /**
- * Una maravilla de la vagancia.
+ * Crea rápidamente un servidor
  * @example
    const lepp = new Lepp(3000);
 
