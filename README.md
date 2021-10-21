@@ -1,6 +1,5 @@
 # LEPP
 Lottieexpress++ es una extension de Express hecha con y para typescript.<br>
-*Nota: No se recomienda para programadores novatos por ser una librería que abstrae demasiados conceptos.*
 
 `npm i @enzodiazdev/lepp`
 
